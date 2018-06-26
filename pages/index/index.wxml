@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class='section' style="flex-direction: column;">
+  <view class="flex-item img"> 
+    <image src="{{tempFilePaths }}" mode="aspectFit" stype='width: 100%; height: 100%'></image>
+  </view>
+  <view class='flex-item text'> 
+    <text>{{text}}</text>
+  </view>
+  <view class='canvasbox' hidden="{{hidden}}">
+    <canvas style="width: {{imagewidth}}px; height: {{imageheight}}px; " canvas-id="dummyCanvas"/>
+  </view>
+
+  <view class="flex-item button">
+    <button bindtap="chooseImage">上传一条狗</button>
+  </view>
+</view>
+
+
