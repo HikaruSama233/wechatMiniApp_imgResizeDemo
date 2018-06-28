@@ -1,0 +1,9 @@
+<view style="flex-direction: column;">
+    <canvas class='show-image' style="width:{{contentWidth}};height:{{contentHeight}}px" canvas-id="myCanvas"></canvas>
+    <view class='flex-item text'> 
+        <text>{{text}}</text>
+    </view>
+    <view class="flex-item button">
+        <button bindtap="getData">上传一条狗</button>
+    </view>
+</view>
